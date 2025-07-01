@@ -79,21 +79,22 @@ export function BackgroundsSection() {
           {backgroundSnippets.map((snippet) => (
             <div 
               key={snippet.id}
-              className="group relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden rounded-lg border border-gray-800 bg-gray-900/50 p-6 transition-all hover:border-gray-700"
+              className="group relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden rounded-lg border border-gray-800/30 transition-all hover:border-gray-700/50"
             >
-              <div className="absolute inset-0 -z-10 opacity-0 transition-opacity group-hover:opacity-100">
+              <div className="absolute inset-0 -z-10">
                 <div 
                   className="h-full w-full"
                   dangerouslySetInnerHTML={{ __html: snippet.code }}
                 />
               </div>
+              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.1),transparent)]"></div>
               
-              <div className="relative z-10 flex h-full items-center justify-center">
+              <div className="relative z-10 flex h-full items-center justify-center bg-gradient-to-t from-black/80 via-transparent to-transparent p-4">
                 <div className="flex gap-4">
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="bg-gray-800/50 hover:bg-gray-700/50"
+                    className="bg-gray-900/80 hover:bg-gray-800/80 backdrop-blur-sm border-gray-700/50 text-white"
                     onClick={() => handlePreview(snippet.code)}
                   >
                     Preview
@@ -101,7 +102,7 @@ export function BackgroundsSection() {
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="bg-gray-800/50 hover:bg-gray-700/50"
+                    className="bg-gray-900/80 hover:bg-gray-800/80 backdrop-blur-sm border-gray-700/50 text-white"
                     onClick={() => handleCopy(snippet.code)}
                   >
                     Copiar
