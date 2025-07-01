@@ -13,9 +13,8 @@ interface BackgroundSnippet {
 // Combinar todos los fondos en un solo array
 const backgroundSnippets: BackgroundSnippet[] = [
   ...backgrounds.gradients,
+  ...backgrounds.effects,
   ...backgrounds.grids,
-  ...backgrounds.dots,
-  ...backgrounds.effects
 ]
 
 export function BackgroundsSection() {

@@ -2,8 +2,10 @@
 
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
+import { useBackground } from "@/contexts/BackgroundContext"
 
 export function HeroSection() {
+  const { resetBackground } = useBackground();
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
       <div className="mx-auto max-w-3xl">
@@ -20,7 +22,7 @@ export function HeroSection() {
           </div>
         </div>
         <h1 className="mb-6 text-5xl font-bold md:text-6xl lg:text-7xl">
-          DarkPaz
+          Dark
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400 md:text-xl">
           Colección de fondos oscuros modernos para tus proyectos web. Haz clic en &quot;Preview&quot; para ver cómo se ve o &quot;Copiar&quot; para obtener el código.
@@ -48,7 +50,7 @@ export function HeroSection() {
               variant="default"
               size="lg"
               className="relative bg-blue-600 hover:bg-blue-700 px-8 py-3 text-base font-medium transition-all duration-300 hover:scale-105"
-              onClick={() => { }}
+              onClick={() => resetBackground()}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
                 <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>

@@ -5,6 +5,7 @@ import { createContext, useContext, ReactNode, useState } from 'react';
 interface BackgroundContextType {
   currentBackground: string;
   setCurrentBackground: (bg: string) => void;
+  resetBackground: () => void;
 }
 
 const BackgroundContext = createContext<BackgroundContextType | undefined>(undefined);
@@ -12,8 +13,12 @@ const BackgroundContext = createContext<BackgroundContextType | undefined>(undef
 export function BackgroundProvider({ children }: { children: ReactNode }) {
   const [currentBackground, setCurrentBackground] = useState<string>('');
 
+  const resetBackground = () => {
+    setCurrentBackground('');
+  };
+
   return (
-    <BackgroundContext.Provider value={{ currentBackground, setCurrentBackground }}>
+    <BackgroundContext.Provider value={{ currentBackground, setCurrentBackground, resetBackground }}>
       <div 
         className="fixed inset-0 -z-50 transition-colors duration-300"
         style={currentBackground ? { 
