@@ -13,7 +13,8 @@ interface BackgroundSnippet {
 const backgroundSnippets: BackgroundSnippet[] = [
   ...backgrounds.gradients,
   ...backgrounds.grids,
-  ...backgrounds.dots
+  ...backgrounds.dots,
+  ...backgrounds.effects
 ]
 
 export function BackgroundsSection() {
