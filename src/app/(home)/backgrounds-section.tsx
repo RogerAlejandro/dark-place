@@ -50,7 +50,7 @@ export function BackgroundsSection() {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-6 md:px-8 lg:px-12 xl:px-16">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {backgroundSnippets.map((snippet) => (
             <div 
