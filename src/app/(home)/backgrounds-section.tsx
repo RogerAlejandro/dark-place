@@ -87,14 +87,12 @@ export function BackgroundsSection() {
                   dangerouslySetInnerHTML={{ __html: snippet.code }}
                 />
               </div>
-              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.1),transparent)]"></div>
-              
-              <div className="relative z-10 flex h-full items-center justify-center bg-gradient-to-t from-black/80 via-transparent to-transparent p-4">
+              <div className="relative z-10 flex h-full items-center justify-center p-4">
                 <div className="flex gap-4">
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="bg-gray-900/80 hover:bg-gray-800/80 backdrop-blur-sm border-gray-700/50 text-white"
+                    className="bg-gray-900/90 hover:bg-gray-800/90 backdrop-blur-sm border-gray-700/50 text-white shadow-lg"
                     onClick={() => handlePreview(snippet.code)}
                   >
                     Preview
@@ -102,7 +100,7 @@ export function BackgroundsSection() {
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="bg-gray-900/80 hover:bg-gray-800/80 backdrop-blur-sm border-gray-700/50 text-white"
+                    className="bg-gray-900/90 hover:bg-gray-800/90 backdrop-blur-sm border-gray-700/50 text-white shadow-lg"
                     onClick={() => handleCopy(snippet.code)}
                   >
                     Copiar
