@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
@@ -8,7 +10,7 @@ export function HeroSection() {
           DarkPaz
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400 md:text-xl">
-          Colección de fondos oscuros modernos para tus proyectos web. Haz clic en "Preview" para ver cómo se ve o "Copiar" para obtener el código.
+          Colección de fondos oscuros modernos para tus proyectos web. Haz clic en &quot;Preview&quot; para ver cómo se ve o &quot;Copiar&quot; para obtener el código.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <div className="relative group">
