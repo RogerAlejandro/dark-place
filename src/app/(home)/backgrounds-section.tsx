@@ -9,32 +9,53 @@ type BackgroundSnippet = {
 }
 
 const backgroundSnippets: BackgroundSnippet[] = [
+  // Gradientes radiales
   {
-    id: 'gradient-1',
-    name: 'Gradient Radial',
-    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+    id: 'gradient-blue',
+    name: 'Blue Radial',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#3b82f6_100%)]"></div>',
   },
   {
-    id: 'gradient-1',
-    name: 'Gradient Radial',
-    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+    id: 'gradient-purple',
+    name: 'Purple Radial',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#8b5cf6_100%)]"></div>',
+  },
+  
+  // Patrones de cuadrícula
+  {
+    id: 'dark-grid',
+    name: 'Dark Grid',
+    code: '<div class="relative h-full w-full bg-black"><div class="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px]"></div></div>',
   },
   {
-    id: 'gradient-1',
-    name: 'Gradient Radial',
-    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+    id: 'slate-grid',
+    name: 'Slate Grid',
+    code: '<div class="relative h-full w-full bg-slate-950"><div class="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div></div>',
+  },
+  
+  // Patrones de puntos
+  {
+    id: 'dot-pattern',
+    name: 'Dot Pattern',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full bg-black bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:20px_20px]"></div>',
   },
   {
-    id: 'gradient-1',
-    name: 'Gradient Radial',
-    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+    id: 'dot-pattern-dense',
+    name: 'Dense Dots',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full bg-black bg-[radial-gradient(#ffffff1a_1px,transparent_1px)] [background-size:12px_12px]"></div>',
+  },
+  
+  // Efectos especiales
+  {
+    id: 'radial-glow',
+    name: 'Radial Glow',
+    code: '<div class="relative h-full w-full bg-black"><div class="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_400px_at_50%_50%,#3b82f640,#00000000)]"></div></div>',
   },
   {
-    id: 'gradient-1',
-    name: 'Gradient Radial',
-    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
-  },
-  // Más fondos se agregarán aquí
+    id: 'diagonal-lines',
+    name: 'Diagonal Lines',
+    code: '<div class="relative h-full w-full bg-black"><div class="absolute inset-0 bg-[linear-gradient(45deg,#1e1e1e_25%,transparent_25%),linear-gradient(-45deg,#1e1e1e_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#1e1e1e_75%),linear-gradient(-45deg,transparent_75%,#1e1e1e_75%)] bg-[size:20px_20px]"></div></div>',
+  }
 ]
 
 export function BackgroundsSection() {
@@ -49,13 +70,16 @@ export function BackgroundsSection() {
   }
 
   return (
-    <section className="py-20">
+    <section className="py-12">
       <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+          Nuestra Colección
+        </h2>
+        <div className="grid min-h-[calc(100vh-20rem)] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {backgroundSnippets.map((snippet) => (
             <div 
               key={snippet.id}
-              className="group relative overflow-hidden rounded-lg border border-gray-800 bg-gray-900/50 p-6 transition-all hover:border-gray-700"
+              className="group relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden rounded-lg border border-gray-800 bg-gray-900/50 p-6 transition-all hover:border-gray-700"
             >
               <div className="absolute inset-0 -z-10 opacity-0 transition-opacity group-hover:opacity-100">
                 <div 
@@ -64,9 +88,8 @@ export function BackgroundsSection() {
                 />
               </div>
               
-              <div className="relative z-10">
-                <h3 className="mb-4 text-lg font-medium">{snippet.name}</h3>
-                <div className="flex gap-2">
+              <div className="relative z-10 flex h-full items-center justify-center">
+                <div className="flex gap-4">
                   <Button 
                     variant="outline" 
                     size="sm"
