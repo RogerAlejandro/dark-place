@@ -1,0 +1,28 @@
+{
+  "gradients": [
+    {
+      "id": "gradient-blue",
+      "name": "Blue Radial",
+      "code": "<div class=\"absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#3b82f6_100%)]\"></div>"
+    },
+    {
+      "id": "gradient-purple",
+      "name": "Purple Radial",
+      "code": "<div class=\"absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#8b5cf6_100%)]\"></div>"
+    }
+  ],
+  "grids": [
+    {
+      "id": "grid-dark",
+      "name": "Dark Grid",
+      "code": "<div class=\"absolute inset-0 -z-10 h-full w-full [background-image:linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] [background-size:24px_24px] bg-[#0a0a0a]\"></div>"
+    }
+  ],
+  "dots": [
+    {
+      "id": "dots-small",
+      "name": "Small Dots",
+      "code": "<div class=\"absolute inset-0 -z-10 h-full w-full [background-image:radial-gradient(#3b3b3b_1px,transparent_1px)] [background-size:16px_16px] bg-[#0a0a0a]\"></div>"
+    }
+  ]
+}

@@ -1,17 +1,23 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 export function HeroSection() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
       <div className="mx-auto max-w-3xl">
         <div className="flex h-[30vh] justify-center mb-6">
-          <img
-            src="/logodarkpaz.webp"
-            alt="DarkPaz Logo"
-            className="h-full w-auto rounded-full object-cover shadow-lg"
-          />
+          <div className="relative h-full w-auto aspect-square">
+            <Image
+              src="/logodarkpaz.webp"
+              alt="DarkPaz Logo"
+              fill
+              sizes="(max-width: 768px) 50vw, 30vw"
+              className="rounded-full object-cover shadow-lg"
+              priority
+            />
+          </div>
         </div>
         <h1 className="mb-6 text-5xl font-bold md:text-6xl lg:text-7xl">
           DarkPaz
