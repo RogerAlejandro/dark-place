@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import backgrounds from "@/data/backgrounds.json"
+import { useBackground } from "@/contexts/BackgroundContext";
 
 interface BackgroundSnippet {
   id: string
@@ -18,14 +19,20 @@ const backgroundSnippets: BackgroundSnippet[] = [
 ]
 
 export function BackgroundsSection() {
+  const { setCurrentBackground } = useBackground();
+
   const handlePreview = (code: string) => {
-    // Implementar vista previa
-    console.log('Preview:', code)
+    setCurrentBackground(code);
   }
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code)
-    // Aquí podrías agregar un toast de confirmación
+  const handleCopy = async (code: string) => {
+    try {
+      await navigator.clipboard.writeText(code);
+      // Aquí podrías agregar un toast de confirmación
+      console.log('Código copiado al portapapeles');
+    } catch (err) {
+      console.error('Error al copiar el código:', err);
+    }
   }
 
   return (
