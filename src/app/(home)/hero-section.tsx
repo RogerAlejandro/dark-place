@@ -6,6 +6,13 @@ export function HeroSection() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
       <div className="mx-auto max-w-3xl">
+        <div className="flex justify-center mb-6">
+          <img 
+            src="/logodarkpaz.webp" 
+            alt="DarkPaz Logo" 
+            className="h-24 w-24 md:h-32 md:w-32 rounded-full border-2 border-gray-700/50 shadow-lg"
+          />
+        </div>
         <h1 className="mb-6 text-5xl font-bold md:text-6xl lg:text-7xl">
           DarkPaz
         </h1>
