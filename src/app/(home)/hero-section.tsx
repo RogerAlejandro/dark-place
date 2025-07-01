@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="flex h-[30vh] justify-center mb-6">
           <div className="relative h-full w-auto aspect-square">
             <Image
-              src="/logodarkpaz.webp"
+              src="/logo.webp"
               alt="DarkPaz Logo"
               fill
               sizes="(max-width: 768px) 50vw, 30vw"
