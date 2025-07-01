@@ -14,6 +14,26 @@ const backgroundSnippets: BackgroundSnippet[] = [
     name: 'Gradient Radial',
     code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
   },
+  {
+    id: 'gradient-1',
+    name: 'Gradient Radial',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+  },
+  {
+    id: 'gradient-1',
+    name: 'Gradient Radial',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+  },
+  {
+    id: 'gradient-1',
+    name: 'Gradient Radial',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+  },
+  {
+    id: 'gradient-1',
+    name: 'Gradient Radial',
+    code: '<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>',
+  },
   // Más fondos se agregarán aquí
 ]
 
@@ -30,9 +50,8 @@ export function BackgroundsSection() {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4">
-    
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 xl:px-16">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {backgroundSnippets.map((snippet) => (
             <div 
               key={snippet.id}
