@@ -45,6 +45,11 @@ export function BackgroundsSection() {
 
   const handlePreview = (code: string) => {
     setCurrentBackground(code);
+    // Desplazarse al hero section
+    const heroSection = document.getElementById('hero-section');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   const handleCopy = async (code: string) => {

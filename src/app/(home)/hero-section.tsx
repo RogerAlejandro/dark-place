@@ -7,7 +7,7 @@ import { useBackground } from "@/contexts/BackgroundContext"
 export function HeroSection() {
   const { resetBackground } = useBackground();
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
+    <section id="hero-section" className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
       <div className="mx-auto max-w-3xl">
         <div className="flex h-[30vh] justify-center mb-6">
           <div className="relative h-full w-auto aspect-square">
