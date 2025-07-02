@@ -1,21 +1,44 @@
 'use client';
 
 import { Button } from "@/components/ui/button"
-import backgrounds from "@/data/backgrounds.json"
 import { useBackground } from "@/contexts/BackgroundContext";
 
+// Definir la estructura de un snippet de fondo
 interface BackgroundSnippet {
-  id: string
-  name: string
-  code: string
+  id: string;
+  name: string;
+  code: string;
+  category?: string;
 }
 
-// Combinar todos los fondos en un solo array
-const backgroundSnippets: BackgroundSnippet[] = [
-  ...backgrounds.gradients,
-  ...backgrounds.effects,
-  ...backgrounds.grids,
-]
+// Definir el tipo para los fondos importados
+interface BackgroundsData {
+  gradients: BackgroundSnippet[];
+  effects: BackgroundSnippet[];
+  grids: BackgroundSnippet[];
+  tops: BackgroundSnippet[];
+  dots?: BackgroundSnippet[];
+}
+
+// Importar los fondos como un módulo
+import rawBackgrounds from "@/data/backgrounds.json";
+
+// Función para combinar todos los fondos en un solo array
+function getAllBackgrounds(): BackgroundSnippet[] {
+  const backgrounds = rawBackgrounds as unknown as BackgroundsData;
+  const allSnippets: BackgroundSnippet[] = [];
+  
+  // Agregar cada categoría al array final
+  Object.values(backgrounds).forEach(category => {
+    if (Array.isArray(category)) {
+      allSnippets.push(...category);
+    }
+  });
+  
+  return allSnippets;
+}
+
+const backgroundSnippets = getAllBackgrounds();
 
 export function BackgroundsSection() {
   const { setCurrentBackground } = useBackground();
