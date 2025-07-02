@@ -21,11 +21,11 @@ export function HeroSection() {
             />
           </div>
         </div>
-        <h1 className="mb-6 text-5xl font-bold md:text-6xl lg:text-7xl">
-          Dark
+        <h1 className="mb-6 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+          Dark Paz
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400 md:text-xl">
-          Colección de fondos oscuros modernos para tus proyectos web. Haz clic en &quot;Preview&quot; para ver cómo se ve o &quot;Copiar&quot; para obtener el código.
+          Colección de fondos oscuros modernos proyectos web. Hacer clic en <span className="chrome-text">&quot;Preview&quot;</span> para ver cómo se ve o <span className="chrome-text">&quot;Copiar&quot;</span> para obtener el código.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <div className="relative group">

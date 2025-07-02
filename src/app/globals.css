@@ -19,6 +19,39 @@
   }
 }
 
+@keyframes chromeShine {
+  0% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    background-position: 100% 50%;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-position: 200% 50%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.chrome-text {
+  background: linear-gradient(
+    to right,
+    #ffffff 20%,
+    #e0e0e0 30%,
+    #ffffff 40%,
+    #e0e0e0 50%,
+    #ffffff 60%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: chromeShine 3s linear infinite;
+  display: inline-block;
+  padding: 0 2px;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
