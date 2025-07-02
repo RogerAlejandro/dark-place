@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'DarkPaz - Fondos Oscuros',
+  title: 'Dark Place - Fondos Oscuros',
   description: 'Colección de fondos oscuros modernos para tus proyectos web',
 }
 
