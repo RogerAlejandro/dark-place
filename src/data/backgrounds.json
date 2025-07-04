@@ -72,7 +72,7 @@
   {
     "id": "top-5",
     "name": "Cyber Grid Purple",
-    "code": "<div class=\"relative h-full w-full bg-[#0a0a1a]\"><div class=\"absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px]\"></div><div class=\"absolute inset-0\" style=\"background: radial-gradient(ellipse 80% 50% at 50% 30%, #8B5CF633 0%, #8B5CF600 70%), radial-gradient(ellipse 50% 80% at 20% 80%, #7C3AED26 0%, #7C3AED00 100%), radial-gradient(ellipse 50% 80% at 80% 80%, #6366F126 0%, #6366F100 100%);\"></div><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1d1d49]\"></div></div>"
+    "code": "<div class=\"relative h-full w-full bg-black\"><div class=\"absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]\"></div><div class=\"absolute inset-0\" style=\"background: radial-gradient(ellipse 80% 50% at 50% 30%, #FFFFFF20 0%, #FFFFFF00 70%), radial-gradient(ellipse 50% 80% at 20% 80%, #FFFFFF10 0%, #00000000 100%), radial-gradient(ellipse 50% 80% at 80% 80%, #FFFFFF10 0%, #00000000 100%);\"></div><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black\"></div></div>"
   }
 ]
 }
