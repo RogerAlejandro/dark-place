@@ -58,6 +58,11 @@
     "id": "top-2",
     "name": "Gradient Purple Effect",
     "code": "<div class=\"relative h-full w-full bg-[#181624]\"><div class=\"absolute bottom-0 left-0 right-0 top-0\" style=\"background: radial-gradient(circle 400px at 50% 50px, #FFFFFF59, #A556FCCC, #2f13a0, #0d052e); opacity: 0.8; filter: blur(8px);\"></div></div>"
+  },
+  {
+    "id": "top-3",
+    "name": "Gradient Effect elipse",
+    "code": "<div class=\"relative h-full w-full bg-[#05082e]\"><div class=\"absolute inset-0\" style=\"background: radial-gradient(ellipse 100% 40% at 50% 20%, #e6f0ff59 0%, #4a90e2cc 30%, #1a3a8f 70%, #05082e 100%); opacity: 0.35; filter: blur(12px);\"></div><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#05082e]\"></div></div>"
   }
 ]
 }
