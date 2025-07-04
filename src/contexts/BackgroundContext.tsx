@@ -19,17 +19,10 @@ export function BackgroundProvider({ children }: { children: ReactNode }) {
 
   return (
     <BackgroundContext.Provider value={{ currentBackground, setCurrentBackground, resetBackground }}>
-      <div 
-        className="fixed inset-0 -z-50 transition-colors duration-300"
-        style={currentBackground ? { 
-          background: currentBackground.includes('gradient') ? 
-            currentBackground.match(/background:(.*?);/)?.[1]?.trim() || currentBackground : 
-            'none'
-        } : {}}
-      >
+      <div className="fixed inset-0 -z-50 transition-colors duration-300">
         {currentBackground && (
           <div 
-            className="absolute inset-0 -z-10"
+            className="absolute inset-0 -z-10 h-full w-full"
             dangerouslySetInnerHTML={{ __html: currentBackground }}
           />
         )}
