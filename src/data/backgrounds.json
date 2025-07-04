@@ -63,6 +63,16 @@
     "id": "top-3",
     "name": "Gradient Effect elipse",
     "code": "<div class=\"relative h-full w-full bg-[#05082e]\"><div class=\"absolute inset-0\" style=\"background: radial-gradient(ellipse 100% 40% at 50% 20%, #e6f0ff59 0%, #4a90e2cc 30%, #1a3a8f 70%, #05082e 100%); opacity: 0.35; filter: blur(12px);\"></div><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#05082e]\"></div></div>"
+  },
+  {
+    "id": "top-4",
+    "name": "Modern Tech Gradient",
+    "code": "<div class=\"relative h-full w-full bg-[#050515]\"><div class=\"absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_20%,#FFFFFF40_0%,#FFFFFF00_50%),radial-gradient(ellipse_50%_80%_at_10%_90%,#7C3AED80_0%,#7C3AED00_100%),radial-gradient(ellipse_50%_80%_at_90%_90%,#8B5CF680_0%,#8B5CF600_100%)] opacity-90\"></div><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a1a80] to-[#050515]\"></div><div class=\"absolute inset-0\" style=\"background: linear-gradient(135deg, #FFFFFF08 0%, #00000000 50%, #00000040 100%);\"></div></div>"
+  },
+  {
+    "id": "top-5",
+    "name": "Cyber Grid Purple",
+    "code": "<div class=\"relative h-full w-full bg-[#0a0a1a]\"><div class=\"absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px]\"></div><div class=\"absolute inset-0\" style=\"background: radial-gradient(ellipse 80% 50% at 50% 30%, #8B5CF633 0%, #8B5CF600 70%), radial-gradient(ellipse 50% 80% at 20% 80%, #7C3AED26 0%, #7C3AED00 100%), radial-gradient(ellipse 50% 80% at 80% 80%, #6366F126 0%, #6366F100 100%);\"></div><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1d1d49]\"></div></div>"
   }
 ]
 }
