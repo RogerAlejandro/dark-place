@@ -25,7 +25,7 @@ export function HeroSection() {
           Dark Place
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400 md:text-xl">
-          Colección de fondos oscuros modernos proyectos web. Hacer clic en <span className="chrome-text">&quot;Preview&quot;</span> para ver cómo se ve o <span className="chrome-text">&quot;Copiar&quot;</span> para obtener el código.
+          Colección de fondos oscuros para proyectos web. Hacer clic en <span className="chrome-text">&quot;Preview&quot;</span> para visualizar y<span className="chrome-text">&quot;Copiar&quot;</span> para obtener el código.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <div className="relative group">
